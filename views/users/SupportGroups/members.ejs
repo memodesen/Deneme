@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet
+    " href="/static/css/SupportGroups/members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+   
+        <div class="navs">
+                <a href="../homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="../psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="../supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="../education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../quizzes">Quizzes</a>
+                        <a href="../informations">Informations</a>
+                    </div>
+                </div>         
+                <a href="../currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                <a href="../donation">  <h2 class="yazi-2">Donations</h2></a>
+           
+        <div class="logolar">
+          <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+            <div class="insta">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </a>
+        
+        <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+            <div class="twit">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </a>
+        </div>
+        
+        <% if (isLoggedIn) { %>
+          <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+            <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+      <% } else { %>
+          <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+      <% } %>      
+      
+    </div>
+
+    <div class="logo" id="memo">
+        <a href="../homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <div class="menu-container">
+                <i class="fa-solid fa-house"></i>
+                <div class="menu-item">
+                  <div class="menu-icon"></div>
+                  <a href="../supportgroups"><h4 style="position: relative; left: 220%; margin-top: 34%;"> Forums  </h4></a>
+                </div>
+                <% if (!isLoggedIn) { %>
+                  <a href="../login"><h3 class="yazi-444">Login</h3></a>
+              <% } %>
+                <div class="search-icon"></div>
+                <div class="more-icon"></div>
+              </div>
+       
+                    <div class="kartlar">
+
+                        <div class="kart kart-3">
+                            <img src="/static/images/SupportGroups/avalanche.png" class="kartimage">
+                            <a href="avalanche"><h2 class="kartyazi" > Avalanche  </h2></a>
+                          </div>
+
+                        <div class="kart kart-2">
+                            <img src="/static/images/SupportGroups/earthquake2.png" class="kartimage2">
+                            <a href="earthquake"><h2 class="kartyazi" > Earthquake  </h2></a>
+                        </div>
+
+                        <div class="kart kart-3">
+                            <img src="/static/images/SupportGroups/fire2.png" class="kartimage">
+                            <a href="fire"><h2 class="kartyazi" > Fire  </h2></a>
+                          </div>
+
+                          <div class="kart kart-4">
+                            <img src="/static/images/SupportGroups/flood.png" class="kartimage">
+                            <a href="flood"><h2 class="kartyazi" > Flood  </h2></a>
+                          </div>
+
+                          <div class="kart kart-5">
+                            <img src="/static/images/SupportGroups/landslide.png" class="kartimage">
+                            <a href="landslide"><h2 class="kartyazi" > Landslide  </h2></a>
+                          </div>
+
+                          <div class="kart kart-6">
+                            <img src="/static/images/SupportGroups/storm.png" class="kartimage">
+                            <a href="storm"><h2 class="kartyazi" > Storm  </h2></a>                          </div>
+
+                          <div class="kart kart-7">
+                            <img src="/static/images/SupportGroups/off.png" class="kartimage">
+                            <a href="off-topic"><h2 class="kartyazi" > Off-Topic  </h2></a>                          </div>
+                            <div class="kart kart-8">
+                                <img src="/static/images/SupportGroups/support.png" class="kartimage">
+                                <a href="support"><h2 class="kartyazi" > Support  </h2></a>
+                              </div>
+                        
+                        </div>
+
+                    
+                      
+                        <div class="forum-container">
+                          <div class="forum-header">
+                            <div>Image</div>
+                            <div>Nickname</div>
+                            <div>Name</div>
+                            <div>Surname</div>
+                            <div>Address</div>
+                            <div>Role</div>
+                            <div>Description</div>
+                            
+                          </div>
+                        
+                          <form action="/supportgroups/members" method="get" class="search-form">
+                            <input type="text" name="nickname" placeholder="Search by nickname" value="<%= currentSearch %>" class="search-input">
+                            <button type="submit" class="search-button">
+                              Search
+                            </button>
+                          </form>
+                          
+                          <% for(let i = 0; i < topics.length; i++) { %>
+                            <div class="forum-topic">
+                              <% if(topics[i].images) { %>
+                                <div class="image">
+                                  <img src="/<%= topics[i].images %>" alt="User Image" style="max-width: 140px; max-height: 150px;">
+
+                                </div>
+                              <% } else { %>
+                                <div class="image">No image available</div>
+                              <% } %>
+                              <div class="nickname"> <%= topics[i].nickname %> </div>
+                              <div class="name"> <%= topics[i].namee %> </div>
+                              <div class="surname"> <%= topics[i].surname %> </div>
+                              <div class="address"> <%= topics[i].address %> </div>
+                              <div class="rolee"> <%= topics[i].membertype %> </div>
+                              <div class="description"> <%= topics[i].description %> </div>
+                            </div>
+                          <% } %>
+
+                          <div class="pagination">
+                            <% for(let i = 1; i <= totalPages; i++) { %>
+                                <a href="/supportgroups/members?page=<%= i %>" class="<%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+                            <% } %>
+
+
+                        </div>
+
+                                                
+                        </div>
+      
+        
+</div>
+      
+        </div>
+       
+
+<script src="members.js"></script>
+</body>
+</html>

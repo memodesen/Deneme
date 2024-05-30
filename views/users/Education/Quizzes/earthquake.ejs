@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/Education/Quizzes/earthquake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+
+       
+      
+        <div class="navs">
+                <a href="../homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="../psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="../supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="../education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+             
+                    <div class="dropdown-content">
+                        <a href="../quizzes">Quizzes</a>
+                        <a href="../informations">Informations</a>
+                    </div>
+                </div>
+                <a href="../currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                <a href="../donation">  <h2 class="yazi-3">Donations</h2></a>
+                
+                
+           
+        <div class="logolar">
+            <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                <div class="insta">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            
+            <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                <div class="twit">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+        
+        <% if (isLoggedIn) { %>
+            <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+              <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+        <% } else { %>
+            <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+        <% } %>
+    </div>
+
+
+    <div class="logo" id="memo">
+        <a href="../homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <div class="social-media-icon-bar">
+              <a href="#" class="icon-button facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="icon-button twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="icon-button instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="icon-button linkedin"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" class="icon-button pinterest"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#" class="icon-button whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          
+        
+          <div class="quiz-container">
+            
+            <div class="question">
+                <h2>1. Aşağıda verilen canlı çiftlerinin hangi ikisinde homolog organ sayısı değerlerinden daha fazla olması beklenir?</h2>
+                
+                <form id="quiz-form">
+                    <input type="radio" id="ant-tick" name="organism-pair" value="ant-tick">
+                    <label for="ant-tick">A) Karınca - kene</label><br>
+        
+                    <input type="radio" id="shark-whale" name="organism-pair" value="shark-whale">
+                    <label for="shark-whale">B) Köpek balığı-balina</label><br>
+        
+                    <input type="radio" id="penguin-bat" name="organism-pair" value="penguin-bat">
+                    <label for="penguin-bat">C) Penguen-yarasa</label><br>
+        
+                    <input type="radio" id="sheep-dolphin" name="organism-pair" value="sheep-dolphin">
+                    <label for="sheep-dolphin">D) Koyun-yunus</label><br>
+        
+                    <input type="radio" id="seal-anchovy" name="organism-pair" value="seal-anchovy">
+                    <label for="seal-anchovy">E) Fok-hamsi</label><br>
+          
+                </form>
+                
+            </div>
+            
+                   <div class="reference"> References:Vikipedia,ChatGPT</div>
+
+            <div class="cards-container">
+                
+          </div>
+          <button type="button" onclick="submitQuiz()">Submit</button>
+        </div>
+                  <section class="bilgi">
+                    <h2 class="othertest" >Other Test Topics </h2>
+                    <div class="topic">
+                      <img src="/static/images/Education/avalanche.avif" >
+                      <a href="../quizzes/avalanche"><p>Avalanche</p></a>
+                  </div>
+                  <div class="topic">
+                      <img src="/static/images/Education/fire.jpg" >
+                      <a href="../quizzes/fire"><p>Fire</p></a>
+                  </div>
+                  <div class="topic">
+                      <img src="/static/images/Education/flood.jpg" >
+                      <a href="../quizzes/flood"><p>Flood</p></a>
+                  </div>
+                  <div class="topic">
+                      <img src="/static/images/Education/landslide.avif" >
+                      <a href="../quizzes/landslide"><p>Landslide</p></a>
+                  </div>
+                  <div class="topic">
+                      <img src="/static/images/Education/storm.avif" >
+                      <a href="../quizzes/storm"><p>Storm</p></a>
+                  </div>
+                  </section>
+        </div>
+      
+        </div>
+       
+
+<div class="container-ecosystem">
+    <div class="content">
+      <div class="header">
+        <a href="url-to-10th-grade-page" class="grade-link"><span class="grade">Quiz</span></a>
+        <a href="url-to-tyt-page" class="subject-type-link"><span class="subject-type">Earthquake</span></a>
+      </div>
+      <h1 class="title">
+        In this exploration of earthquakes, we uncover the delicate dance between Earth's formidable power and humanity's resilience, a journey through the tremors that shape our planet and the spirit that defines our response.</h1>
+      <span class="author">DisasterPal</span>
+    </div>
+  </div>
+
+
+<script src="/static/js/Education/Quizzes/earthquake.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/Education/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+
+        <div class="logo" id="memo">
+            <a href="homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+        </div>
+      
+        <div class="navs">
+                <a href="homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+  
+                    <div class="dropdown-content">
+                        <a href="quizzes">Quizzes</a>
+                        <a href="informations">Informations</a>
+                    </div>
+                </div>
+                <a href="currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                <a href="donation">  <h2 class="yazi-3">Donations</h2></a>
+                
+           
+        <div class="logolar">
+            <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                <div class="insta">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            
+            <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                <div class="twit">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+        <% if (isLoggedIn) { %>
+            <a href="profilee"><h2 class="yazi-4">Profile</h2></a>
+            <a href="log-outt"><h2 class="yazi-4">Log-out</h2></a>
+        <% } else { %>
+            <a href="login"><h2 class="yazi-4">Login</h2></a>
+        <% } %>
+        
+    </div>
+
+
+    <div class="yazilar">
+       
+
+        <div class="category-container">
+            <h2 class="categories">CATEGORIES</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="static/images/Education/informations.webp" class="infophoto">
+                    <div class="card-text">
+                        <a href="informations"> <button>Informations</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="static/images/Education/quiz.webp" class="quizphoto">
+                    <div class="card-text">
+                        <a href="quizzes"> <button>Quizzes</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="next">
+            <i class="bubble" id="bubbleid"></i> 
+        </div>
+         
+        <div class="previous">
+            <i class="bubble-2" id="bubble2id"></i>
+        </div>
+    
+</div>
+
+<script src="/static/js/Education/education.js"></script>
+</body>
+</html>

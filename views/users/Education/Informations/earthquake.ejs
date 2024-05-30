@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/Education/Informations/earthquake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+    <div class="anasayfa" id="anasayfa">
+        <div class="headdd">
+    
+           
+          
+            <div class="navs">
+                    <a href="../homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                    <a href="../psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                    <a href="../supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                    <div class="dropdown">
+                        <a href="../education" class="dropbtn">
+                            <h2 class="yazi-44">Education & Training</h2>
+                        </a>
+                 
+                        <div class="dropdown-content">
+                            <a href="../../quizzes">Quizzes</a>
+                        <a href="../../informations">Informations</a>
+                        </div>
+                    </div>
+                    <a href="../currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                    <a href="../donation">  <h2 class="yazi-3">Donations</h2></a>
+                    
+                    
+               
+            <div class="logolar">
+                <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <% if (isLoggedIn) { %>
+                <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                  <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+            <% } else { %>
+                <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+            <% } %>
+            
+        </div>
+
+
+    <div class="logo" id="memo">
+        <a href="../homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <nav id="table-of-contents">
+                <h2>Table of Contents</h2>
+                <ul>
+
+                    <div class="memoo">
+                    <li><a href="#section-1"  style="text-decoration: none;      font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px; "> <div>Introduction to Earthquakes</div>     </a></li>
+                       </div>
+
+                       <div class="memoo">
+                    <li><a href="#section-2"   style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;"><div>The Science Behind Earthquakes</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                            <li><a href="#section-3"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                            font-size: 16px;
+                             line-height: 24px;
+                            color: #171a1d;
+                            margin-bottom: 8px;
+                             " >    <div>Measuring and Predicting Earthquakes</div>   </a></li>
+                        </div>
+                      
+                        <div class="memoo">
+                    <li><a href="#section-4"  style="text-decoration: none;    font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>Earthquakes Preparedness and Safety Measures</div></a></li>
+                            </div>
+
+                            <div class="memoo">
+                    <li><a href="#section-5"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>The Role of Technology in Earthquakes Prediction and Response</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                    <li><a href="#section-6" style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">  <div>Conclusion</div></a></li>
+                            <li><a href="#section-7" style="text-decoration: none;     font-family: Raleway, sans-serif;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #171a1d;
+                                margin-bottom: 8px;">  <div>Recent Earthquakes in Turkey</div></a></li>
+                        </div>
+                </ul>
+            </nav>
+            
+            <article id="content">
+                <section id="section-1">
+                    
+                   
+                    <h1 style="font-weight: 600; font-size: xx-large;">EARTHQUAKES</h1>
+
+                    <div class="container">
+                        <h1>Part 1: Introduction to Earthquakes</h1>
+                        <p>Earthquakes represent one of nature's most powerful and awe-inspiring phenomena. They occur without warning, causing the ground to shake, sometimes with devastating force. But what exactly are earthquakes, and why do they happen?</p>
+                
+                        <h2>What Are Earthquakes?</h2>
+                        <p>At its core, an earthquake is the result of the sudden release of energy in the Earth's crust that creates seismic waves. This energy release is most often caused by the movement of tectonic plates, vast pieces of the Earth's surface that move very slowly over its semi-fluid upper mantle. The boundaries where these plates meet are prone to accumulating stress over time. When the stress exceeds the strength of rocks making up the Earth's crust, it results in a fracture or a slip along a fault line, thereby releasing energy in the form of an earthquake.</p>
+                
+                        <h2>Why Do Earthquakes Occur?</h2>
+                        <p>The Earth's lithosphere, which includes the crust and the uppermost mantle, is divided into several large and small tectonic plates. These plates are constantly moving, but not always smoothly. The energy that accumulates from the moving plates or as a result of volcanic activity can lead to earthquakes. The interaction of these plates can occur in several ways:</p>
+                        <ul>
+                            <li><strong>Convergent boundaries</strong>, where plates move toward each other, often leading to powerful, destructive earthquakes.</li>
+                            <li><strong>Divergent boundaries</strong>, where plates move apart, usually causing less severe earthquakes.</li>
+                            <li><strong>Transform boundaries</strong>, where plates slide past one another horizontally, which can also lead to significant seismic activity.</li>
+                        </ul>
+                
+                        <h2>The Importance of Studying Earthquakes</h2>
+                        <p>Understanding earthquakes and their causes is crucial for several reasons. First, it allows scientists to develop better methods for predicting potential earthquakes, aiming to reduce the impact on human life and property. Additionally, studying earthquakes helps in designing buildings and infrastructure that can withstand the shaking, especially in regions that are most vulnerable to seismic activity. Moreover, earthquake research contributes to our overall understanding of the Earth's geology and tectonic processes, offering insights into the dynamic nature of our planet.</p>
+                        <img src="/static/images/Education/Informations/earthquake-2.jpg" alt="" >
+                    </div>
+
+                </section>
+                <section id="section-2">
+                    <div class="container">
+                        <h1>Part 2: The Science Behind Earthquakes</h1>
+                        <p>Earthquakes are fascinating natural events with complex causes and effects. This part explores the scientific principles that explain how and why earthquakes occur, focusing on tectonic plates, fault lines, and seismic waves.</p>
+                
+                        <h2>Tectonic Plates and Fault Lines</h2>
+                        <p>The Earth's lithosphere is divided into several large and a number of smaller tectonic plates. These plates float on the semi-fluid asthenosphere beneath them. Tectonic plates move very slowly, driven by convection currents within the Earth's mantle. The edges of these plates, where they meet, are known as fault lines. It's along these fault lines that most earthquakes occur. The movement of these plates can cause them to collide (convergent boundary), pull apart (divergent boundary), or slide past each other (transform boundary).</p>
+                
+                        <h2>The Process of Energy Release</h2>
+                        <p>When stress along a fault line overcomes the friction holding the plates in place, it causes an earthquake. This stress can build up over many years, even centuries. When it's released, it happens very rapidly, sending shockwaves through the Earth's crust. These shockwaves are what we feel as the shaking of the ground during an earthquake.</p>
+                
+                        <h2>Types of Seismic Waves</h2>
+                        <p>Seismic waves are the waves of energy caused by the sudden breaking of rock within the Earth or an explosion. They are the energy that travels through the Earth and is recorded on seismographs. There are three main types of seismic waves:</p>
+                        <ul>
+                            <li><strong>P-waves (Primary waves)</strong> are the fastest seismic waves and can move through solid, liquid, or gas. They cause particles in the material to move in the same direction as the wave is traveling.</li>
+                            <li><strong>S-waves (Secondary waves)</strong> are slower than P-waves and can only move through solids. They cause particles to move perpendicular to the direction of the wave.</li>
+                            <li><strong>Surface waves</strong> travel along the Earth's surface and cause most of the damage during an earthquake. They are slower than P and S waves but can be much larger in amplitude.</li>
+                        </ul>
+                        <img src="/static/images/Education/Informations/earthquake-3.webp" alt="">
+                    </div>
+                </section>
+                <section id="section-3">
+                    <div class="container">
+                        <h1>Part 3: Measuring Earthquakes</h1>
+                        <p>Understanding the magnitude and epicenter of an earthquake is crucial for assessing its potential impact. This section explores the tools and scales used to measure and classify earthquakes.</p>
+                
+                        <h2>Richter Scale and Moment Magnitude Scale</h2>
+                        <p>The <strong>Richter Scale</strong> was developed in 1935 by Charles F. Richter and is used to quantify the energy released by an earthquake. It's a logarithmic scale, meaning each whole number increase represents a tenfold increase in measured amplitude and roughly 31.6 times more energy release. However, for large earthquakes, the <strong>Moment Magnitude Scale (Mw)</strong> is now more commonly used as it provides a more accurate measure of an earthquake's total energy release.</p>
+                
+                        <h2>Seismographs and Seismometers</h2>
+                        <p>Seismographs, or seismometers, are instruments that detect and record the vibrations caused by earthquakes. By measuring the amplitude and frequency of ground motion, they help determine the magnitude and location of an earthquake. Modern seismographs are highly sensitive, capable of detecting movements of the Earth's surface as small as a nanometer.</p>
+                
+                        <h2>Earthquake Epicenters and Hypocenters</h2>
+                        <p>The <strong>epicenter</strong> is the point on the Earth's surface directly above where an earthquake originates, known as the <strong>hypocenter</strong> or focus. Determining the epicenter is crucial for understanding the potential impact area and for issuing warnings to affected regions. The depth of the hypocenter can significantly influence the intensity of the earthquake's surface shaking.</p>
+                    </div>
+                </section>
+                <section id="section-4">
+                    <div class="container">
+                        <h1>Part 4: Earthquake Preparedness and Safety Measures</h1>
+                        <p>Being prepared for an earthquake can significantly reduce the risks to life and property. This section provides essential guidelines and safety measures to help individuals and communities prepare for, survive, and recover from earthquakes.</p>
+                
+                        <h2>Before an Earthquake: Preparation</h2>
+                        <ul>
+                            <li>Create an emergency preparedness kit with essential items such as water, food, medications, and important documents.</li>
+                            <li>Develop a family emergency plan that includes communication strategies and meeting places.</li>
+                            <li>Secure heavy furniture and objects that could fall or cause injury during an earthquake.</li>
+                            <li>Know how to turn off your gas, water, and electricity to prevent post-earthquake fires and flooding.</li>
+                        </ul>
+                
+                        <h2>During an Earthquake: Safety Actions</h2>
+                        <ul>
+                            <li>Drop to the ground, take cover under a sturdy piece of furniture, and hold on until the shaking stops.</li>
+                            <li>If indoors, stay away from windows, glass, and anything that could fall or shatter.</li>
+                            <li>If outdoors, move to a clear area away from buildings, trees, and power lines.</li>
+                            <li>If driving, pull over to a safe place, stay in the vehicle, and avoid bridges, overpasses, and underpasses.</li>
+                        </ul>
+                
+                        <h2>After an Earthquake: Recovery and Safety</h2>
+                        <ul>
+                            <li>Check yourself and others for injuries and provide first aid if necessary.</li>
+                            <li>Inspect your home for damage, using caution to avoid gas leaks, electrical hazards, and structural damage.</li>
+                            <li>Listen to the radio or television for emergency updates and instructions from local authorities.</li>
+                            <li>Be prepared for aftershocks, which can further damage weakened structures.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="section-5">
+                    <div class="container">
+                        <h1>Part 5: The Role of Technology in Earthquake Prediction and Response</h1>
+                        <p>Advancements in technology have significantly impacted our ability to predict and respond to earthquakes. From early warning systems to post-earthquake recovery efforts, technology plays a crucial role in minimizing the impact of seismic events on lives and property.</p>
+                
+                        <h2>Earthquake Prediction Methods</h2>
+                        <p>While predicting the exact time and location of an earthquake remains challenging, scientists use technology to identify potential risk areas. Techniques such as seismic monitoring, satellite data analysis, and machine learning algorithms help in understanding seismic activity patterns and potential earthquake precursors.</p>
+                
+                        <h2>Early Warning Systems</h2>
+                        <p>Early warning systems utilize networked seismographs and other sensors to detect the initial waves of an earthquake. These systems can provide precious seconds or even minutes of warning before the more destructive waves hit, allowing people and automated systems to take protective actions.</p>
+                
+                        <h2>Post-Earthquake Response and Recovery</h2>
+                        <p>Technology also aids in the aftermath of an earthquake. Drones and satellites provide detailed imagery for assessing damage and coordinating rescue efforts. Meanwhile, mobile applications and social media platforms facilitate communication and distribution of aid to affected communities.</p>
+                        <img src="/static/images/Education/Informations/earthquake-4.webp" alt="">
+                    </div>
+                   
+                </section>
+
+                <section id="section-6">
+                    <div class="container">
+                        <h1>Conclusion</h1>
+                        <p>Throughout this series, we've explored the complex nature of earthquakes, from their underlying causes to the impact they've had on human society throughout history. We've also discussed the critical role of technology in predicting and responding to these natural events and provided practical advice on preparedness and safety measures.</p>
+                        
+                        <p>Understanding earthquakes is crucial for reducing their impact on our lives. While predicting earthquakes with precise accuracy remains a challenge, ongoing research and technological advancements continue to improve our ability to forecast seismic events and respond effectively. Preparedness, both at the individual and community level, can significantly mitigate the risks associated with earthquakes, saving lives and reducing damage to infrastructure.</p>
+                        
+                        <p>We encourage everyone to take earthquake preparedness seriously and to stay informed about the latest developments in earthquake science and safety protocols. Together, we can build more resilient communities capable of withstanding the challenges posed by these powerful natural phenomena.</p>
+                    </div>
+                </section>
+
+                <section id="section-7">
+                    <div class="container">
+                        <h2>Recent Earthquakes in Turkey</h2>
+                        <div id="earthquakeContainer" class="earthquake-info">
+                          
+                            <!-- Earthquake data will be inserted here by the displayEarthquakes function -->
+                        </div>
+                    </div>
+                </section>
+
+
+               
+
+                <p>&nbsp</p>
+                References:Vikipedia,ChatGPT,USGS
+            </article>
+            
+            <section class="bilgi">
+                <h2 class="othertest" >Other Information Topics </h2>
+                <div class="topic">
+                  <img src="/static/images/Education/avalanche.avif" >
+                  <a href="avalanche"><p>Avalanche</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/fire.jpg" >
+                  <a href="fire"><p>Fire</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/flood.jpg" >
+                  <a href="flood"><p>Flood</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/landslide.avif" >
+                  <a href="landslide"><p>Landslide</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/storm.avif" >
+                  <a href="storm"><p>Storm</p></a>
+              </div>
+              </section>
+
+
+        </div>
+        
+</div>
+
+
+      
+        </div>
+       
+
+<div class="container-ecosystem">
+    <div class="content">
+      <div class="header">
+        <span class="grade">Information</span>
+        <span class="subject-type">Earthquake</span>
+      </div>
+      <h1 class="title">
+        In this exploration of earthquakes, we uncover the delicate dance between Earth's formidable power and humanity's resilience, a journey through the tremors that shape our planet and the spirit that defines our response.</h1>
+      <span class="author">DisasterPal</span>
+    </div>
+  </div>
+
+
+<script src="/static/js/Education/Informations/earthquake.js"></script>
+</body>
+</html>

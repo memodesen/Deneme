@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet
+    " href="/static/css/CurrentDisasters/currentdisasters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+
+       
+      
+        <div class="navs">
+                <a href="homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="/education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="quizzes">Quizzes</a>
+                        <a href="informations">Informations</a>
+                    </div>
+                </div>
+                <a href="currentdisasters">  <h2 class="yazi-5">          Current Disasters</h2></a>
+                <a href="donation">  <h2 class="yazi-3">Donations</h2></a>
+                
+                <div class="logolar">
+                    <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                        <div class="insta">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                        <div class="twit">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <% if (isLoggedIn) { %>
+                    <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                      <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+                <% } else { %>
+                    <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+                <% } %>
+                        
+       
+    </div>
+   
+
+    <div class="logo" id="memo">
+        <a href="homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <div class="menu-container">
+                <i class="fa-solid fa-house"></i>
+                <div class="menu-item">
+                  <div class="menu-icon"></div>
+                  <a href="currentdisasters"><h5 style="position: relative; margin-left: 120%; margin-top: 17%;">     Current Disasters  </h5></a>
+                </div>
+                <% if (!isLoggedIn) { %>
+                 
+                <% } %>
+                <div class="search-icon"></div>
+                <div class="more-icon"></div>
+              </div>
+                             
+   
+
+ 
+                        
+                            
+                     
+                            <div class="location-section">
+                                <button id="shareLocation">Share Location</button>
+
+                                <table id="locationsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Location</th>
+                                            <th>Descriptions</th>
+                                            <th>Time</th> <!-- New column header for Time -->
+                                         
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% locations.forEach(function(location) { %>
+                                            <tr>
+                                                <td><%= location.address %></td>
+                                                <td>
+                                                    <%= location.needs || "No comments yet" %> <!-- Display 'needs' data or a placeholder -->
+                                                    <% if (isLoggedIn && currentUserId === location.userId) { %>
+                                                        <form action="/api/add-comment/<%= location.id %>" method="post">
+                                                            <textarea name="comment" placeholder="Add a comment..." class="commento"></textarea>
+                                                            <textarea id="transcription<%= location.id %>" name="comment" placeholder="Your transcription will appear here..." readonly></textarea>
+                                                            <button type="button" onclick="startDictation('<%= location.id %>')" class="button3">Start</button>
+                                                            <button type="button" onclick="stopDictation('<%= location.id %>')" class="button3">Stop</button>
+                                                           
+                                                            
+
+                                                            <button type="submit" class="button1">Submit</button>
+                                                        </form>
+                                                    <% } %>
+                                                </td>
+
+                                                <td><%= new Date(location.time).toLocaleString() %></td> <!-- Displaying timestamp -->
+
+                                                <td>
+                                                    <% if (isLoggedIn && currentUserId === location.userId) { %>
+                                                        <button onclick="deleteLocation('<%= location.id %>')" class="button2">Delete</button>
+                                                    <% } %>
+                                                </td>
+                                            </tr>
+                                        <% }); %>
+                                    </tbody>
+                                    
+                                </table>
+                                <div class="pagination">
+                                    <% for (let i = 1; i <= totalPages; i++) { %>
+                                        <a href="/currentdisasters?page=<%= i %>" class="<%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+                                    <% } %>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                                
+                        
+                           
+                       
+                                           
+        
+                        
+</div>
+
+
+
+      
+        </div>
+       
+
+        <div class="next">
+            <i class="bubble" id="bubbleid"></i>
+        </div>
+        
+        <div class="previous">
+            <i class="bubble-2" id="bubble2id"></i>
+        </div>
+
+
+        
+        <script src="/static/js/CurrentDisasters/currentdisasters.js"  defer></script>
+
+</body>
+</html>

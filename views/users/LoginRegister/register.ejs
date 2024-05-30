@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/LoginRegister/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>  
+</head>
+
+<body>
+    
+    <div class="anasayfa" id="anasayfa">
+        <div class="headdd">
+    
+            <div class="logo" id="memo">
+                <a href="homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+            </div>
+          
+            <div class="navs">
+                    <a href="homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                    <a href="psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                    <a href="supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                    <div class="dropdown">
+                        <a href="education" class="dropbtn">
+                            <h2 class="yazi-44">Education & Training</h2>
+                        </a>
+
+                        <div class="dropdown-content">
+                            <a href="quizzes">Quizzes</a>
+                            <a href="informations">Informations</a>
+                        </div>
+                    </div>
+                    <a href="currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                    <a href="donation">  <h2 class="yazi-3">Donations</h2></a>
+                
+    
+    
+            <div class="logolar">
+                <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+            </div>
+            <% if (isLoggedIn) { %>
+                <a href="profilee"><h2 class="yazi-4">Profile</h2></a>
+                <a href="log-outt"><h2 class="yazi-4">Log-out</h2></a>
+            <% } else { %>
+                <a href="login"><h2 class="yazi-4">Login</h2></a>
+            <% } %>
+            
+            
+        </div>
+
+
+        <div class="container">
+            <div class="left-panel">
+
+                <div class="solyazi">
+                    <h1>Register Now!</h1>
+                    <p style="color:white; font-family: 'Raleway', sans-serif;">DisasterPal - Connect, Support, Overcome</p>
+                </div>
+
+                <div id="panel1" class="panel" style="font-family:'Raleway', sans-serif; background-color: #242627; color: white;">
+                    <p>DisasterPal reminds you that you are not alone in times of disaster; it aims to be light and hope even in the darkest times. Our mission is to strengthen safety and solidarity during disasters by putting technology at the service of humanity.</p>
+                </div>
+                <div id="panel2" class="panel" style="display: none; font-family:'Raleway', sans-serif ;background-color: #242627; color: white;" >
+                    <p>DisasterPal aims to create a transformation in the field of disaster management. By adopting the principle of 'we are stronger together', it has adopted the vision of increasing the integration and resilience of society in the face of disasters.</p>
+                </div>
+                <div id="panel3" class="panel" style="display: none; font-family:'Raleway', sans-serif;background-color: #242627; color: white; ">
+                    <p>Our vision is to create a world where everyone can be prepared and resilient against disasters. With DisasterPal, we aim to democratize access to information and ensure that every individual can stand strong and conscious against disasters.</p>
+                </div>
+                
+                <div class="navigation-dots">
+                    <span class="dot" onclick="switchPanel(1)"></span>
+                    <span class="dot" onclick="switchPanel(2)"></span>
+                    <span class="dot" onclick="switchPanel(3)"></span>
+                </div>
+   
+            </div>
+            <div class="right-panel">
+                <form action="/register" method="POST">
+                    <h2 id="Account">Create an account</h2>
+                    <div class="form-row">
+                        <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
+                        <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="nickname" placeholder="Nickname" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                    <button type="submit">Create an Account</button>
+                </form>
+                <div class="login">
+                    Already have an account? <a href="login">Log In</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="/static/js/LoginRegister/website5.js"></script>
+
+</body>
+
+</html>

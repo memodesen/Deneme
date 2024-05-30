@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/Education/Informations/fire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+    <div class="anasayfa" id="anasayfa">
+        <div class="headdd">
+    
+           
+          
+            <div class="navs">
+                    <a href="../homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                    <a href="../psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                    <a href="../supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                    <div class="dropdown">
+                        <a href="../education" class="dropbtn">
+                            <h2 class="yazi-44">Education & Training</h2>
+                        </a>
+                   
+                        <div class="dropdown-content">
+                            <a href="../../quizzes">Quizzes</a>
+                            <a href="../../informations">Informations</a>
+                        </div>
+                    </div>
+                    <a href="../currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                    <a href="../donation">  <h2 class="yazi-3">Donations</h2></a>
+                    
+                    
+               
+            <div class="logolar">
+                <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <% if (isLoggedIn) { %>
+                <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                  <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+            <% } else { %>
+                <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+            <% } %>
+            
+        </div>
+
+
+    <div class="logo" id="memo">
+        <a href="../homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <nav id="table-of-contents">
+                <h2>Table of Contents</h2>
+                <ul>
+
+                    <div class="memoo">
+                    <li><a href="#section-1"  style="text-decoration: none;      font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px; "> <div>Introduction to Fires</div>     </a></li>
+                       </div>
+
+                       <div class="memoo">
+                    <li><a href="#section-2"   style="text-decoration: none;    font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;"><div>The Science Behind Fires</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                            <li><a href="#section-3"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                            font-size: 16px;
+                             line-height: 24px;
+                            color: #171a1d;
+                            margin-bottom: 8px;
+                             " >    <div>Measuring and Predicting Fires</div>   </a></li>
+                        </div>
+                      
+                        <div class="memoo">
+                    <li><a href="#section-4"  style="text-decoration: none;    font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>Fires Preparedness and Safety Measures</div></a></li>
+                            </div>
+
+                            <div class="memoo">
+                    <li><a href="#section-5"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>The Role of Technology in Fires Prediction and Response</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                    <li><a href="#section-6" style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">  <div>Conclusion</div></a></li>
+                        </div>
+                </ul>
+            </nav>
+            
+            <article id="content">
+                <section id="section-1">
+                   
+                    <h1 style="font-weight: 600; font-size: xx-large;">FIRES</h1>
+
+                    <div class="container">
+                        <section id="section-1">
+                            <div class="container">
+                                <h1>Part 1: Introduction to Fires</h1>
+                                <p>Fires, both natural and man-made, are powerful forces that can lead to significant environmental and societal changes. They occur under various conditions and can spread rapidly, causing destruction to wildlife, vegetation, and human structures. But what exactly are fires, and why do they happen?</p>
+                        
+                                <h2>What Are Fires?</h2>
+                                <p>At its core, a fire is a chemical reaction called combustion, which requires fuel, oxygen, and an ignition source to occur. This reaction releases heat, light, and various reaction products, often rapidly. Natural fires are typically triggered by lightning or volcanic activity, while human activities like unattended campfires, discarded cigarettes, and arson are common causes of man-made fires.</p>
+                        
+                                <h2>Why Do Fires Occur?</h2>
+                                <p>Fires occur for many reasons and can be classified into natural and human-caused fires. In natural settings, fires play a crucial role in ecosystems by clearing dead trees and underbrush, thus fostering new growth. However, when uncontrolled, fires can cause extensive damage to homes, human lives, and natural resources.</p>
+                        
+                                <h2>The Importance of Understanding Fires</h2>
+                                <p>Understanding fires and their behavior is crucial for developing effective prevention, management, and recovery strategies. This knowledge helps in minimizing fire-related losses and restoring affected ecosystems. Moreover, it aids firefighters and emergency services in combating fires more effectively, protecting both the environment and human populations.</p>
+                            </div>
+                            <img src="/static/images/Education/Informations/fire-2.webp" alt="">
+                        </section>
+                        
+                    
+                        <section id="section-2">
+                            <div class="container">
+                                <h1>Part 2: The Science Behind Fires</h1>
+                                <p>Understanding the science behind fires is essential for predicting their behavior and effectively managing fire-related disasters. This part explores the components of fire, types of fires, and how they spread.</p>
+                        
+                                <h2>Components of Fire</h2>
+                                <p>The fire triangle consists of three essential elements: fuel, heat, and oxygen. Removing any of these elements can extinguish a fire. Additionally, the fire tetrahedron includes a fourth element, the chemical chain reaction, highlighting the role of chemical reactions in sustaining fires.</p>
+                        
+                                <h2>Types of Fires</h2>
+                                <p>Fires are classified based on the type of fuel that feeds them, including:</p>
+                                <ul>
+                                    <li><strong>Class A:</strong> Fires involving ordinary combustibles like wood, paper, and cloth.</li>
+                                    <li><strong>Class B:</strong> Fires involving flammable liquids like gasoline, oil, and grease.</li>
+                                    <li><strong>Class C:</strong> Fires involving electrical equipment.</li>
+                                    <li><strong>Class D:</strong> Fires involving combustible metals.</li>
+                                    <li><strong>Class K:</strong> Fires involving cooking oils and fats.</li>
+                                </ul>
+                        
+                                <h2>How Fires Spread</h2>
+                                <p>Fires spread through conduction, convection, and radiation, affecting nearby combustible materials. Wind and topography can significantly influence a fire's spread, especially in outdoor environments.</p>
+                            </div>
+                        </section>
+                        
+                    
+                        <section id="section-3">
+                            <div class="container">
+                                <h1>Part 3: Measuring and Classifying Fires</h1>
+                                <p>Measuring and classifying fires is crucial for understanding their potential impact and for planning firefighting and evacuation efforts. This section discusses the scales used to measure fire intensity and the classification of wildfires.</p>
+                        
+                                <h2>Fire Intensity and Severity</h2>
+                                <p>Fire intensity refers to the energy output of a fire and is measured in terms of heat release per unit area. Fire severity, on the other hand, describes the fire's impact on the ecosystem, including soil damage and vegetation loss.</p>
+                        
+                                <h2>Wildfire Classification</h2>
+                                <p>Wildfires are classified based on their size, speed of spread, and the type of vegetation involved. This classification helps in determining the appropriate response strategies to effectively manage and contain the fire.</p>
+                        
+                                <h2>Fire Danger Ratings</h2>
+                                <p>Fire danger ratings provide information on the potential for a fire to start and spread, based on current and forecasted weather conditions. 
+
+                                    <img src="/static/images/Education/Informations/fire-3.webp" alt="">
+                        </section>
+
+
+                        <section id="section-4">
+                            <div class="container">
+                                <h1>Part 4: Fire Preparedness and Safety Measures</h1>
+                                <p>Being prepared for a fire can significantly reduce the risks to life and property. This section provides essential guidelines and safety measures to help individuals and communities prepare for, survive, and recover from fires.</p>
+                        
+                                <h2>Before a Fire: Preparation</h2>
+                                <ul>
+                                    <li>Install smoke alarms on every level of your home, inside bedrooms and outside sleeping areas.</li>
+                                    <li>Test smoke alarms every month and replace batteries at least once a year.</li>
+                                    <li>Have a fire escape plan that includes two ways out of every room and an outside meeting place.</li>
+                                    <li>Keep fire extinguishers in key locations and ensure everyone knows how to use them.</li>
+                                </ul>
+                        
+                                <h2>During a Fire: Safety Actions</h2>
+                                <ul>
+                                    <li>If a fire occurs, get out, stay out, and call for help. Do not go back inside for anything or anyone.</li>
+                                    <li>Crawl low under any smoke to your exit - heavy smoke and poisonous gases collect first along the ceiling.</li>
+                                    <li>If you encounter smoke when using your primary exit, use an alternative way out.</li>
+                                    <li>If you are trapped, seal the room and cover vents and cracks around doors with cloth or tape to keep smoke out.</li>
+                                </ul>
+                        
+                                <h2>After a Fire: Recovery and Safety</h2>
+                                <ul>
+                                    <li>Once you are out, stay out. Firefighters will assist in saving your possessions.</li>
+                                    <li>If you are told to evacuate, do so immediately.</li>
+                                    <li>Check yourself and family members for injuries and get medical attention if necessary.</li>
+                                    <li>Listen to news updates for information about the fire and any evacuation orders.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+                        
+                        <section id="section-5">
+                            <div class="container">
+                                <h1>Part 5: The Role of Technology in Fire Detection and Response</h1>
+                                <p>Advancements in technology have significantly impacted our ability to detect and respond to fires. From early warning systems to post-fire recovery efforts, technology plays a crucial role in minimizing the impact of fires on lives and property.</p>
+                        
+                                <h2>Fire Detection and Alarm Systems</h2>
+                                <p>Modern smoke detectors and fire alarm systems use advanced sensors to detect fire and smoke at the earliest stages, providing crucial time for evacuation.</p>
+                        
+                                <h2>Remote Sensing and Drones</h2>
+                                <p>Drones and satellite technology provide real-time imagery and data to monitor wildfire spread, helping to allocate firefighting resources more effectively.</p>
+                        
+                                <h2>Post-Fire Assessment and Recovery</h2>
+                                <p>Technology aids in assessing damage, identifying the fire's cause, and planning reconstruction. Mobile apps and online platforms facilitate aid distribution and community support.</p>
+                            </div>
+                            <img src="/static/images/Education/Informations/fire-4.webp" alt="">
+                        </section>
+                        
+
+                        <section id="section-6">
+                            <div class="container">
+                                <h1>Conclusion</h1>
+                                <p>This series has explored the critical aspects of fire safety, from understanding fire dynamics to implementing effective preparedness and safety measures. We've also examined how technology enhances our ability to predict, detect, and respond to fires, thereby safeguarding communities and reducing potential losses.</p>
+                        
+                                <p>Understanding fire risks and adopting proactive safety measures are essential steps in protecting ourselves and our properties. While technology continues to advance our response capabilities, individual awareness and preparedness remain vital. By staying informed and prepared, we can significantly reduce the devastating impact of fires.</p>
+                        
+                                <p>We encourage everyone to prioritize fire safety by installing detection systems, planning escape routes, and staying informed about fire management strategies. Together, we can build resilience against fires and protect our communities from harm.</p>
+                            </div>
+                        </section>
+                        
+                        References:Vikipedia,ChatGPT
+
+            </article>
+
+            <section class="bilgi">
+                <h2 class="othertest" >Other Information Topics </h2>
+                <div class="topic">
+                  <img src="/static/images/Education/earthquake.jpg" >
+                  <a href="earthquake"><p>Earthquake</p></a>
+              </div>
+              <div class="topic">
+                <img src="/static/images/Education/avalanche.avif" >
+                <a href="avalanche"><p>Avalanche</p></a>
+            </div>
+              <div class="topic">
+                  <img src="/static/images/Education/flood.jpg" >
+                  <a href="flood"><p>Flood</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/landslide.avif" >
+                  <a href="landslide"><p>Landslide</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/storm.avif" >
+                  <a href="storm"><p>Storm</p></a>
+              </div>
+              </section>
+
+
+        </div>
+        
+</div>
+
+
+      
+        </div>
+       
+
+<div class="container-ecosystem">
+    <div class="content">
+      <div class="header">
+        <span class="grade">Information</span>
+        <span class="subject-type">Fire</span>
+      </div>
+      <h1 class="title">
+        Fires, with their dual nature of destruction and renewal, encapsulate the fierce and transformative energy that shapes ecosystems, human lives, and civilizations across the globe.
+    </h1>
+        <span class="author">DisasterPal</span>
+    </div>
+  </div>
+
+
+<script src="/static/js/Education/Informations/fire.js"></script>
+</body>
+</html>

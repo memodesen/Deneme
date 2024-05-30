@@ -1,0 +1,631 @@
+
+.anasayfa2{
+    background: url(../ana\ sayfa.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .anasayfa{
+      background: url("/static/images/anasayfaa.webp");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.9;
+      height: 100vh;
+      background-attachment: fixed;
+      margin-top: -10px;
+      margin-bottom: -20px;
+      margin-left: -10px;
+      margin-right: -10px;
+   }
+  
+   .headd{
+      position: absolute;
+     height: 10vh;
+      width: 100vw;
+      top: 20%;
+   }
+   
+   .yazi-1{
+      height: 7vh;
+      width: 6vw;
+      font-size: 16px;
+     margin: 10px;
+     padding: 0px 0px 10px 0px;
+     color:white;
+     display: inline-block;
+     font-family: "Raleway",sans-serif;
+     font-weight: 600;
+   }
+  
+   .yazi-2{
+      height: 7vh;
+      width: 6vw;
+      font-size: 16px;
+     margin: 10px;
+     padding: 0px 0px 10px 0px;
+     color:white;
+     display: inline-block;
+     font-family: "Raleway",sans-serif;
+   }
+  
+   .yazi-3{
+      height: 7vh;
+      width: 6vw;
+      font-size: 16px;
+     margin: 10px;
+     padding: 0px 0px 10px 0px;
+     color:white;
+     display: inline-block;
+     font-family: "Raleway",sans-serif;
+   }
+  
+   .yazi-44{
+      height: 7vh;
+      width: 6vw;
+      font-size: 16px;
+     margin: 10px;
+     padding: 0px 0px 10px 0px;
+     color:white;
+     display: inline-block;
+     font-family: "Raleway",sans-serif;
+   }
+  
+   .yazi-5{
+      height: 7vh;
+      width: 6vw;
+      font-size: 16px;
+     margin: 10px;
+     padding: 5px;
+     color:white;
+     display: inline-block;
+     font-family:"Raleway",sans-serif;
+   }
+  
+   .yazi-4{
+      position: relative;
+      right: -40%;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-family:"Raleway",sans-serif;
+      font-size: 18px;
+      background-color: #eb571c;
+      padding: 13px 23px 13px 24px;
+      text-align: center;
+      border-radius: 30px;
+      letter-spacing: 1.25px;
+      display: inline-block;
+   }
+   
+   .yazi-1::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+      transform: translateY(5px);
+    }
+    
+    .yazi-1:hover:after {
+      width: 41%;
+      transform: translateY(5px);
+    }
+  
+    .yazi-2::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+      transform: translateY(5px);
+    }
+    
+    .yazi-2:hover:after {
+      width: 41%;
+      transform: translateY(5px);
+    }
+  
+    .yazi-3::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+      transform: translateY(5px); 
+    }
+    
+    .yazi-3:hover::after {
+      width: 60%;
+      transform: translateY(5px);
+    }
+  
+    .yazi-44::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+      transform: translateY(5px);
+    }
+    
+    .yazi-44:hover::after {
+      width: 80%;
+      transform: translateY(5px);
+    }
+  
+    .yazi-5::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+      transform: translateY(5px); 
+    }
+    
+    .yazi-5:hover::after {
+      width: 85%;
+      transform: translateY(5px);
+    }
+  
+   .yazi-4:hover{
+    opacity:0.3;
+    box-shadow: .2s;
+   }
+  
+   .navs{
+      display: inline-block;
+      position:fixed;
+      margin-right: 35px;
+      margin-top: 15px;
+      top:4%;
+      left: 25%;
+   }
+   
+   .logo{
+      position: absolute;
+      top:-4%;
+      left: -1%;
+      width: 50px;
+  }
+  
+  img{
+      width: 300px;
+      height: auto;
+  }
+  
+   .yazilar-1{
+      top: 370px;
+      left: 92.6014px;
+      transform-origin: 50% 50%;
+      margin: 0px;
+      padding: 0px;
+      font-size: 33.55px;
+      position:absolute;
+      left: 25%;
+      font-family: "Raleway",sans-serif;
+      color: white;
+   }
+  
+   .yazilar-2{
+      top: 32%;
+      transform-origin: 50% 50%;
+      position:absolute;
+      left: 25%;
+      font-family: "Raleway",sans-serif;
+      color: white;
+      font-size: 2rem; 
+      border: 2px solid white; 
+      padding: 20px; 
+      text-align: center;
+       color: #ffffff;
+      text-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+      font-size: 20.6043px;
+  }
+  
+  .yazilar-3{
+      top: 60%;
+      position:absolute;
+      left: 25%;
+      font-family: "Raleway",sans-serif;
+      color: white;
+      padding: 20px; 
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+      font-size: 15px;
+      background-color: #eb571c;
+  }
+  
+  .yazilar-3:hover{
+    opacity:0.3;
+    box-shadow: .2s;
+  }
+  
+  .logolar{
+  position: absolute;
+  margin-top: 1%;
+  left: 121%;
+  color: #ffffff;
+  }
+  
+  .next{
+      background: transparent;
+      height: 54px;
+      line-height: 54px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      width: 54px;
+      font-size: 25px;
+      color: #fff;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      left: 92%;
+      font-size: 18px;
+      line-height: 54px;
+  }
+  
+  .next:hover{
+      opacity:0.9;
+    box-shadow: .2s;
+    background-color: #df1d2f;
+  }
+  
+  .right{
+      font-family: 'themify';
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  .bubble {
+     
+    }
+    .bubble::before,
+    .bubble::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #f1f1f1;
+    }
+    
+    .bubble::after {
+      border-width: 0 0 0 10px;
+      border-color: transparent transparent transparent white;
+      right: 11px;
+    }
+  
+  .previous{
+      background: transparent;
+      height: 54px;
+      line-height: 54px;
+      position: absolute;
+      text-align: center;
+      top: 49%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      width: 54px;
+      font-size: 25px;
+      color: #fff;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      left: 8%;
+      font-size: 18px;
+      line-height: 54px;
+  }
+  
+  .previous:hover{
+      opacity:0.9;
+    box-shadow: .2s;
+    background-color: #df1d2f;
+  }
+  
+  .bubble-2 {
+    
+    }
+    
+    .bubble-2::before,
+    .bubble-2::after {
+      content: "";
+      position: absolute;
+      top:18px;
+      right: 24px;
+      border-style: solid;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #f1f1f1 transparent transparent;
+    }
+    
+    .bubble-2::after {
+      border-width: 0 10px 0 0;
+      border-color: transparent white transparent transparent;
+      left: 11px;
+    }
+  
+    #logoş:hover{
+      opacity:0.9;
+      box-shadow: .2s;
+    }
+    .container {
+      display: flex;
+      max-width: 1400px;
+      max-height: 550px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #fff;
+      position:absolute;
+      top: 18%;
+      left: 5%;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(to right, transparent -250%, rgba(0, 0, 0, 2) 45%, #ffffff 46%);
+      z-index: -1;
+    }
+  
+  .left-panel, .right-panel {
+      padding: 20px;
+  }
+  
+  .left-panel {
+      width: 42.5%;
+      height: 50%;
+  }
+  
+  .right-panel {
+      width: 50%;
+  }
+  
+  h1 {
+      color: #ff5722;
+  }
+  
+  
+  input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+  }
+  
+  .privacy-policy {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+  }
+  
+  .privacy-policy label {
+      margin-left: 5px;
+  }
+  
+  button[type="submit"] {
+      background: #ff5722;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 95%;
+  }
+  
+  .login {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .login a {
+      color: #ff5722;
+      text-decoration: none;
+  }
+  .left-panel{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 75vh; 
+  }
+.solyazi{
+    text-align: center; 
+    max-width: 80%; 
+    margin-bottom: 10%;
+}
+
+.right-panel {
+  display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: stretch; 
+    height: 78vh;
+    padding: 10px; 
+}
+
+form {
+  width: 50%; 
+  margin: 60px; 
+}
+
+
+input, select, button {
+  width: calc(100% - 20px); 
+  padding: 5px;
+  margin: 10px 0; 
+  margin-left: 110px;
+}
+
+.login {
+  width: 90%; 
+  text-align: center;
+  margin-top: 10px;
+ margin-left: -15px;
+}
+
+
+input, select, button, .login a {
+  box-sizing: border-box; 
+}
+
+#Account{
+    position: absolute;
+    left: 61%;
+    top: 12%;
+    font-size: 30px;
+    line-height: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.form-row input {
+  width: calc(50% - 10px); 
+  margin: 10px 10px; 
+
+}
+
+
+.form-row {
+  width: 100%; 
+  margin-left: 100px; 
+}
+
+#logo {
+  width: 200px; 
+  height: 200px; 
+  margin-top: 10px;
+}
+
+.panel {
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  font-size: 16px; 
+  line-height: 1.6; 
+  margin-bottom: 10px; 
+}
+
+.navigation-dots {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #ff5722;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.yazi-4{
+  position: relative;
+  right: -20%;
+  margin-top: 3.6%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family:"Raleway",sans-serif;
+  font-size: 15px;
+  background-color: #eb571c;
+  padding: 13px 23px 13px 24px;
+  text-align: center;
+  border-radius: 30px;
+  letter-spacing: 1.25px;
+  display: inline-block;
+}
+
+.logolar{
+  position: absolute;
+  top: 18%;
+  right: -58%;
+  color: #ffffff;
+  }
+
+  .insta i {
+    font-size: 24px;
+    color: #C13584;
+    background: transparent;
+    border: none;
+}
+.insta a {
+    text-decoration: none;
+}
+.insta:hover i {
+    font-size: 26px;
+    color: #E1306C;
+}
+
+.twit i {
+  font-size: 24px;
+  color: #C13584;
+  background: transparent;
+  border: none;
+}
+.twit a {
+  text-decoration: none;
+}
+.twit:hover i {
+  font-size: 26px;
+  color: #E1306C;
+}

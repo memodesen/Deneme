@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/Education/Informations/storm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+</head>
+
+<body>
+    <div class="anasayfa" id="anasayfa">
+        <div class="headdd">
+    
+           
+          
+            <div class="navs">
+                    <a href="../homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                    <a href="../psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                    <a href="../supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                    <div class="dropdown">
+                        <a href="../education" class="dropbtn">
+                            <h2 class="yazi-44">Education & Training</h2>
+                        </a>
+                        <!-- Açılır Menü İçeriği -->
+                        <div class="dropdown-content">
+                            <a href="../../quizzes">Quizzes</a>
+                        <a href="../../informations">Informations</a>
+                        </div>
+                    </div>
+                    <a href="../currentdisasters">  <h2 class="yazi-2">Current Disasters</h2></a>
+                    <a href="../donation">  <h2 class="yazi-3">Donations</h2></a>
+                    
+                    
+               
+            <div class="logolar">
+                <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                    <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <% if (isLoggedIn) { %>
+                <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                  <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+            <% } else { %>
+                <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+            <% } %>
+            
+        </div>
+
+
+    <div class="logo" id="memo">
+        <a href="../homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <nav id="table-of-contents">
+                <h2>Table of Contents</h2>
+                <ul>
+
+                    <div class="memoo">
+                    <li><a href="#section-1"  style="text-decoration: none;      font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px; "> <div>Introduction to Storms</div>     </a></li>
+                       </div>
+
+                       <div class="memoo">
+                    <li><a href="#section-2"   style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;"><div>The Science Behind Storms</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                            <li><a href="#section-3"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                            font-size: 16px;
+                             line-height: 24px;
+                            color: #171a1d;
+                            margin-bottom: 8px;
+                             " >    <div>Measuring and Predicting Storms</div>   </a></li>
+                        </div>
+                      
+                        <div class="memoo">
+                    <li><a href="#section-4"  style="text-decoration: none;    font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>Storms Preparedness and Safety Measures</div></a></li>
+                            </div>
+
+                            <div class="memoo">
+                    <li><a href="#section-5"  style="text-decoration: none;     font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">   <div>The Role of Technology in Storms Prediction and Response</div></a></li>
+                        </div>
+
+                        <div class="memoo">
+                    <li><a href="#section-6" style="text-decoration: none;      font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #171a1d;
+                        margin-bottom: 8px;">  <div>Conclusion</div></a></li>
+                        </div>
+                </ul>
+            </nav>
+            
+            <article id="content">
+                <section id="section-1">
+                   
+                    <h1 style="font-weight: 600; font-size: xx-large;">STORMS</h1>
+
+                    <div class="container">
+                        <section id="section-1">
+                            <div class="container">
+                                <h1>Part 1: Introduction to Storms</h1>
+                                <p>Storms are powerful meteorological events characterized by severe weather conditions. They can manifest as thunderstorms, hurricanes, blizzards, and more, affecting vast areas with wind, rain, snow, and lightning. Understanding the dynamics of storms is crucial for predicting their occurrence and mitigating their impact on society and the environment.</p>
+                        
+                                <h2>What Are Storms?</h2>
+                                <p>At their core, storms are the result of atmospheric disturbances that involve sudden changes in air pressure, temperature, and moisture levels. These disturbances can lead to the formation of clouds, precipitation, and strong winds. Storms play a vital role in transferring heat and moisture around the Earth, contributing to the global climate system.</p>
+                        
+                                <h2>Why Do Storms Occur?</h2>
+                                <p>Storms occur due to the interaction between different atmospheric conditions, including warm, moist air rising into the atmosphere where it cools and condenses, forming clouds and precipitation. The Earth's rotation, topography, and variations in sea surface temperature further influence the development and direction of storms.</p>
+                        
+                                <h2>The Importance of Studying Storms</h2>
+                                <p>Studying storms and their mechanisms is essential for forecasting severe weather and issuing warnings to protect lives and property. Advances in meteorology and climate science have improved our ability to predict storms and understand their broader impacts on the Earth's climate and ecosystems.</p>
+                            </div>
+                            <img src="/static/images/Education/Informations/storm-2.webp" alt="">
+                        </section>
+                        
+                        
+                        <section id="section-2">
+                            <div class="container">
+                                <h1>Part 2: The Science Behind Storms</h1>
+                                <p>The science of storms involves understanding the atmospheric conditions that lead to their formation. This section delves into the meteorological principles behind different types of storms and how they develop.</p>
+                        
+                                <h2>Formation of Storms</h2>
+                                <p>Storms form when warm, moist air rises and cools in the atmosphere, creating clouds and precipitation. The specific conditions required for storm formation vary depending on the type of storm, such as thunderstorms, hurricanes, or blizzards.</p>
+                        
+                                <h2>Types of Storms</h2>
+                                <p>Different types of storms include:</p>
+                                <ul>
+                                    <li><strong>Thunderstorms</strong>, which are characterized by lightning, thunder, and heavy rain.</li>
+                                    <li><strong>Hurricanes</strong> (or typhoons, cyclones), which are large, rotating storm systems with high winds and heavy rain, forming over warm ocean waters.</li>
+                                    <li><strong>Tornadoes</strong>, which are violently rotating columns of air extending from thunderstorms to the ground.</li>
+                                    <li><strong>Blizzards</strong>, which feature heavy snowfall, strong winds, and cold temperatures.</li>
+                                </ul>
+                        
+                                <h2>Impact of Storms</h2>
+                                <p>Storms can have wide-ranging effects, including flooding, wind damage, loss of life, and significant impacts on infrastructure and agriculture. Understanding the dynamics of storms is crucial for emergency preparedness and response.</p>
+                            </div>
+                        </section>
+                        
+                        
+                        
+                        <section id="section-3">
+                            <div class="container">
+                                <h1>Part 3: Measuring and Predicting Storms</h1>
+                                <p>Accurately measuring and predicting storms are key components of meteorology that help mitigate their impact on human activities and natural environments. This section explores the tools and methods used in storm forecasting and measurement.</p>
+                        
+                                <h2>Storm Measurement Tools</h2>
+                                <p>Tools such as radar, satellites, weather stations, and buoys are used to monitor weather conditions and track the development of storms. These instruments provide data on temperature, humidity, wind speed, and precipitation.</p>
+                        
+                                <h2>Storm Prediction Techniques</h2>
+                                <p>Meteorologists use a combination of observational data, computer models, and historical weather patterns to predict storms. Advanced computing technologies enable the simulation of storm scenarios, improving the accuracy of weather forecasts and warnings.</p>
+                        
+                                <h2>Importance of Early Warning Systems</h2>
+                                <p>Early warning systems play a critical role in providing timely alerts about upcoming storms, allowing for evacuation plans and other preparatory actions to be implemented, thereby saving lives and reducing property damage.</p>
+                            </div>
+                            <img src="/static/images/Education/Informations/storm-3.webp" alt="">
+                        </section>
+                        
+                                            
+
+                        <section id="section-4">
+                            <div class="container">
+                                <h1>Part 4: Storm Preparedness and Safety Measures</h1>
+                                <p>Preparing for storms is crucial to mitigate risks to life and property. This section offers guidance on how individuals and communities can prepare for and safely navigate through storms.</p>
+                        
+                                <h2>Before a Storm: Preparation</h2>
+                                <ul>
+                                    <li>Develop an emergency plan that includes evacuation routes and emergency contacts.</li>
+                                    <li>Build an emergency kit with essential supplies, including water, non-perishable food, medications, flashlights, and batteries.</li>
+                                    <li>Secure or bring inside outdoor objects that could be blown away or cause damage.</li>
+                                    <li>Stay informed about the latest weather updates and warnings.</li>
+                                </ul>
+                        
+                                <h2>During a Storm: Safety Actions</h2>
+                                <ul>
+                                    <li>Stay indoors and away from windows and glass doors.</li>
+                                    <li>If advised to evacuate, do so immediately following recommended routes.</li>
+                                    <li>Avoid driving or walking through floodwaters.</li>
+                                    <li>Seek shelter in a sturdy building or a storm shelter if you are outdoors.</li>
+                                </ul>
+                        
+                                <h2>After a Storm: Recovery</h2>
+                                <ul>
+                                    <li>Wait for the all-clear from authorities before returning home.</li>
+                                    <li>Inspect your property for damage and take photos for insurance claims.</li>
+                                    <li>Be cautious of downed power lines and contaminated water.</li>
+                                    <li>Check on neighbors, especially the elderly and those who may need assistance.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+                        
+                        <section id="section-5">
+                            <div class="container">
+                                <h1>Part 5: The Role of Technology in Storm Prediction and Response</h1>
+                                <p>Technological advancements have significantly enhanced our ability to predict storms and respond effectively. This section highlights how technology is utilized in storm prediction and emergency response.</p>
+                        
+                                <h2>Advances in Storm Prediction</h2>
+                                <p>Weather satellites, radar technology, and computer modeling have greatly improved storm tracking and forecasting, allowing meteorologists to predict storm paths, intensity, and impacts with greater accuracy.</p>
+                        
+                                <h2>Emergency Response and Communication</h2>
+                                <p>Technology plays a crucial role in disseminating warnings and coordinating emergency response efforts. Social media, emergency alert systems, and mobile apps ensure rapid communication with the public during storm events.</p>
+                        
+                                <h2>Recovery and Damage Assessment</h2>
+                                <p>Drones and satellite imagery are invaluable tools for assessing damage, mapping affected areas, and planning recovery efforts efficiently in the aftermath of a storm.</p>
+                            </div>
+                            <img src="/static/images/Education/Informations/storm-4.webp" alt="">
+                        </section>
+                        
+                        <section id="section-6">
+                            <div class="container">
+                                <h1>Conclusion</h1>
+                                <p>This series has explored the multifaceted nature of storms, from their underlying causes to the impact they have on our world. We have discussed the importance of preparedness, the scientific principles behind storm formation, and the crucial role of technology in predicting and responding to these natural events.</p>
+                                
+                                <p>Understanding storms and their potential dangers is vital for reducing their impact on our lives. While the power of storms can be overwhelming, advancements in science and technology continue to improve our ability to forecast and respond to storm threats. Preparedness and education remain key to safeguarding communities and minimizing the risks associated with storms.</p>
+                                
+                                <p>We encourage everyone to take storm preparedness seriously and to stay informed about the latest weather forecasts and safety recommendations. By working together and leveraging the tools and knowledge available to us, we can enhance our resilience against storms and protect our communities from harm.</p>
+                            </div>
+                        </section>
+                        
+                        References:Vikipedia,ChatGPT
+
+            </article>
+
+            <section class="bilgi">
+                <h2 class="othertest" >Other Information Topics </h2>
+                <div class="topic">
+                  <img src="/static/images/Education/earthquake.jpg" >
+                  <a href="earthquake"><p>Earthquake</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/fire.jpg" >
+                  <a href="fire"><p>Fire</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/flood.jpg" >
+                  <a href="flood"><p>Flood</p></a>
+              </div>
+              <div class="topic">
+                  <img src="/static/images/Education/landslide.avif" >
+                  <a href="landslide"><p>Landslide</p></a>
+              </div>
+              <div class="topic">
+                <img src="/static/images/Education/avalanche.avif" >
+                <a href="avalanche"><p>Avalanche</p></a>
+            </div>
+              </section>
+
+
+        </div>
+        
+</div>
+
+
+      
+        </div>
+       
+
+<div class="container-ecosystem">
+    <div class="content">
+      <div class="header">
+       <span class="grade">Information</span>
+       <span class="subject-type">Storm</span>
+      </div>
+      <h1 class="title">
+        Storms, in their majestic fury, serve as a testament to the untamable force of nature, challenging humanity's resilience and ingenuity in the face of meteorological power.
+    </h1>
+        <span class="author">DisasterPal</span>
+    </div>
+  </div>
+
+
+<script src="/static/js/Education/Informations/storm.js"></script>
+</body>
+</html>

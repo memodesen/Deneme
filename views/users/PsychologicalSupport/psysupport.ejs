@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet
+    " href="/static/css/PsychologicalSupport/psysupport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+
+       
+      
+        <div class="navs">
+                <a href="homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="/education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="quizzes">Quizzes</a>
+                        <a href="informations">Informations</a>
+                    </div>
+                </div>
+                <a href="../currentdisasters">  <h2 class="yazi-3">Current Disasters</h2></a>
+                <a href="../donation">  <h2 class="yazi-3">Donations</h2></a>
+                
+                <div class="logolar">
+                    <a href="https://www.instagram.com/disasterpal/" target="_blank" rel="noopener noreferrer" class="logoo">
+                        <div class="insta">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://x.com/DisasterPal43" target="_blank" rel="noopener noreferrer" class="logoo">
+                        <div class="twit">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <% if (isLoggedIn) { %>
+                    <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                      <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+                <% } else { %>
+                    <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+                <% } %>
+                        
+       
+    </div>
+   
+
+    <div class="logo" id="memo">
+        <a href="homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <div class="menu-container">
+                <i class="fa-solid fa-house"></i>
+                <div class="menu-item">
+                  <div class="menu-icon"></div>
+                  <a href="psysupport"><h4 style="position: relative; left: 75%; margin-top: 12%;"> Psychological Support  </h4></a>
+                </div>
+                <% if (!isLoggedIn) { %>
+                    <a href="../login"><h3 class="yazi-444">Login</h3></a>
+                <% } %>
+                <div class="search-icon"></div>
+                <div class="more-icon"></div>
+              </div>
+                             
+   
+              <div>
+
+                <form id="disasterForm" action="/api/message" method="POST" onsubmit="submitForm(); return false;">
+                    <div class="form-group">
+                        <label for="age">How old are you?</label>
+                        <input type="text" id="age" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="healthIssues">Do you have any health problems, physical or psychological?</label>
+                        <input type="text" id="healthIssues" name="healthIssues" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="disasterSituation">Which disaster situation are you suffering from?</label>
+                        <input type="text" id="disasterSituation" name="disasterSituation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="personalDetails">Please tell me about yourself specifically:</label>
+                        <textarea id="personalDetails" name="personalDetails" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+
+            </div>
+
+ 
+                        <div class="containerr">
+
+                            <div class="toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="relevanceToggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <div class="relevancee">Open Relevance</div>
+                        
+
+                            </div>
+
+                            <header class="headerr">
+
+                                <img src="/static/images/zyro-image (4).png" id="logo2" width="80" height="80"></img>
+
+                                <h1 class="headerr1">How can I help you today?</h1>
+                            </header>
+                           
+                                <main class="main">
+                                    
+                                
+
+                                  
+                                
+                                    
+                                </main>
+                        
+                            <div class="search-container">
+                                <input type="text" id="searchBox" placeholder="Message DisasterPal" class="search-input">
+                                
+                                <form id="speechForm">
+                                    <textarea id="transcript" name="message" placeholder="Message DisasterPal" class="search-input" style="opacity: 0; position: absolute; height: 0; width: 0; overflow: hidden;"></textarea>
+                                    <button type="button" onclick="startDictation()" class="button2">Start</button>
+                                    <button type="button" onclick="stopDictation()" class="button3">Stop</button>
+                                </form>
+
+                            </div>
+                        </div>
+                                           
+        
+                        <div class="reference"> API Reference: Gemini API </div>
+                        
+        
+</div>
+
+      
+        </div>
+       
+
+        <div class="next">
+            <i class="bubble" id="bubbleid"></i>
+        </div>
+        
+        <div class="previous">
+            <i class="bubble-2" id="bubble2id"></i>
+        </div>
+
+<script src="/static/js/PsychologicalSupport/psysupport.js"></script>
+</body>
+</html>

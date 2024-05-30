@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet
+    " href="/static/css/PsychologicalSupport/psysupport2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DisasterPal</title>    
+
+</head>
+
+<body>
+<div class="anasayfa" id="anasayfa">
+    <div class="headdd">
+
+       
+      
+        <div class="navs">
+                <a href="homepage"> <h2 class="yazi-1" id="me">Home</h2></a>
+                <a href="psysupport"> <h2 class="yazi-2">Psychological Support</h2></a>
+                <a href="supportgroups">  <h2 class="yazi-3">Support Groups</h2></a>
+                <div class="dropdown">
+                    <a href="/education" class="dropbtn">
+                        <h2 class="yazi-44">Education & Training</h2>
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="quizzes">Quizzes</a>
+                        <a href="informations">Informations</a>
+                    </div>
+                </div>
+                <a href="currentdisasters">  <h2 class="yazi-3">Current Disasters</h2></a>
+                
+                <div class="logolar">
+                    <div class="insta">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+            
+                    <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                            
+                    <div class="face">
+                        <i class="fa-brands fa-facebook"></i>
+                     </div>
+                </div>
+                
+                <% if (isLoggedIn) { %>
+                    <a href="../profilee"><h2 class="yazi-4">Profile</h2></a>
+                      <a href="../log-outt"><h2 class="yazi-4">Log-out</h2></a>
+                <% } else { %>
+                    <a href="../../login"><h2 class="yazi-4">Login</h2></a>
+                <% } %>
+                        
+       
+    </div>
+   
+
+    <div class="logo" id="memo">
+        <a href="homepage"><img src="/static/images/zyro-image (4).png" id="logo" width="100" height="100"></a>
+    </div>
+
+
+    <div class="yazilar">
+
+        <div class="content2">
+         
+            <div class="menu-container">
+                <i class="fa-solid fa-house"></i>
+                <div class="menu-item">
+                  <div class="menu-icon"></div>
+                  <a href="psysupport"><h4 style="position: relative; left: 75%; margin-top: 12%;"> Psychological Support  </h4></a>
+                </div>
+                <% if (!isLoggedIn) { %>
+                    <a href="../login"><h3 class="yazi-444">Login</h3></a>
+                <% } %>
+                <div class="search-icon"></div>
+                <div class="more-icon"></div>
+              </div>
+                             
+   
+
+ 
+                        
+                            
+                     
+                            <div class="location-section">
+                                <button id="shareLocation">Share Location</button>
+
+                                <table id="locationsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Location</th>
+                                            <th>Descriptions</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% locations.forEach(function(location) { %>
+                                            <tr>
+                                                <td><%= location.address %></td>
+                                                <td>
+                                                    <%= location.needs || "No comments yet" %> <!-- Display 'needs' data or a placeholder -->
+                                                    <% if (isLoggedIn && currentUserId === location.userId) { %>
+                                                        <form action="/api/add-comment/<%= location.id %>" method="post">
+                                                            <textarea name="comment" placeholder="Add a comment..."></textarea>
+                                                            <button type="submit" class="button">Submit</button>
+                                                        </form>
+                                                    <% } %>
+                                                </td>
+                                                <td>
+                                                    <% if (isLoggedIn && currentUserId === location.userId) { %>
+                                                        <button onclick="deleteLocation('<%= location.id %>')" class="button">Delete</button>
+                                                    <% } %>
+                                                </td>
+                                            </tr>
+                                        <% }); %>
+                                    </tbody>
+                                    
+                                </table>
+                                <div class="pagination">
+                                    <% for (let i = 1; i <= totalPages; i++) { %>
+                                        <a href="/psysupport2?page=<%= i %>" class="<%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+                                    <% } %>
+                                </div>
+                            </div>
+                            
+                            
+                                
+                        
+                           
+                       
+                                           
+        
+                        
+</div>
+
+
+
+      
+        </div>
+       
+
+        <div class="next">
+            <i class="bubble" id="bubbleid"></i>
+        </div>
+        
+        <div class="previous">
+            <i class="bubble-2" id="bubble2id"></i>
+        </div>
+
+
+        
+        <script src="/static/js/PsychologicalSupport/psysupport2.js" defer></script>
+
+</body>
+</html>
